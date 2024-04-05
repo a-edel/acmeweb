@@ -1,5 +1,7 @@
 package com.acme.statusmgr;
 
+import com.acme.statusmgr.beans.facade.Mock;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -20,6 +22,14 @@ public class StatusControllerBasicTest {
 
     @Autowired
     private MockMvc mockMvc;
+
+    /**
+     * Since this is a test, specify that all tests should use dummy system data.
+     */
+    @BeforeAll
+    public static void beforeAll() {
+        StatusController.setSystemInfoFacade(new Mock());
+    }
 
     @Test
     public void noNameParamShouldReturnDefaultMessage() throws Exception {

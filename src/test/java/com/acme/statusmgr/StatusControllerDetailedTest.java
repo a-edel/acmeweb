@@ -15,6 +15,7 @@
  */
 package com.acme.statusmgr;
 
+import com.acme.statusmgr.beans.facade.Mock;
 import org.hamcrest.Matchers;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
@@ -45,7 +46,6 @@ public class StatusControllerDetailedTest {
      */
     @BeforeAll
     public static void beforeAll() {
-       //todo StatusController.setSystemInfoFacade(null /* todo: Inject appropriate object */);
         StatusController.setSystemInfoFacade(new Mock());
     }
 
