@@ -17,7 +17,7 @@ A simple request like:
 Will respond with:
 
 `---- [source, json]
-{"id":3,"contentHeader":"Server Status requested by Anonymous","statusDesc":"Server is up"}
+{"id":3,"contentHeader":"Server Status requested by Anonymous","requestCost":1,"statusDesc":"Server is up"}
 ----`
 
 You can customize the greeting with an optional `name` parameter in the query string:
@@ -27,7 +27,7 @@ http://localhost:8080/server/status?name=Moishe
 The `name` parameter value overrides the default value of “Anonymous” and is reflected in the response:
 
 `---- [source, json]
-{"id":2,"contentHeader":"Server Status requested by Moishe","statusDesc":"Server is up"}
+{"id":2,"contentHeader":"Server Status requested by Moishe","requestCost":1,"statusDesc":"Server is up"}
 ----`
 
 To request other details, you can use the `detailed` path and then use the `details` parameter in the query string:
@@ -37,7 +37,7 @@ http://localhost:8080/server/status/detailed?name=Moishe&details=availableProces
 This will respond with something like:
 
 `---- [source, json]
-{"id":2,"contentHeader":"Server Status requested by Moishe","requestCost":72,"statusDesc":"Server is up, and there are 4 processors available,
+{"id":2,"contentHeader":"Server Status requested by Moishe","requestCost":4,"statusDesc":"Server is up, and there are 4 processors available,
 ----`
 
 
