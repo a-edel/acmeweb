@@ -10,17 +10,19 @@ public class ServerManager {
 
     /**
      * Get the status of this server
-     * @return a descriptive string about the servers status
+     *
+     * @return a descriptive string about the server's status
      */
-    static public String getCurrentServerStatus() {
-        return "up";  // The server is up
+    public static String getCurrentServerStatus() {
+        return "up"; // The server is up
     }
 
     /**
      * Find out if this server is operating normally
+     *
      * @return Boolean indicating if server is operating normally
      */
-    static public Boolean isOperatingNormally()
+    public static Boolean isOperatingNormally()
     {
         return true;
     }

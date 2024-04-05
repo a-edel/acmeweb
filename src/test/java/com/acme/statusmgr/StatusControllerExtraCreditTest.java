@@ -43,7 +43,7 @@ public class StatusControllerExtraCreditTest {
 
 
     /**
-     * Test to ensure that the getFacade() method is not causing facade field to be serialized as a detail.     *
+     * Test that the getFacade() method is not causing facade field to be serialized as a detail.     *
      * @throws Exception if something goes wrong while using the mock server
      */
     @Test
