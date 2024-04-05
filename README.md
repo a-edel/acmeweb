@@ -30,10 +30,22 @@ The `name` parameter value overrides the default value of “Anonymous” and is
 {"id":2,"contentHeader":"Server Status requested by Moishe","statusDesc":"Server is up"}
 ----`
 
+To request other details, you can use the `detailed` path and then use the `details` parameter in the query string:
+
+http://localhost:8080/server/status/detailed?name=Moishe&details=availableProcessors
+
+This will respond with something like:
+
+`---- [source, json]
+{"id":2,"contentHeader":"Server Status requested by Moishe","requestCost":72,"statusDesc":"Server is up, and there are 4 processors available,
+----`
+
+
 **--> Syntax for URLS:**
 *    All start with /server
-*    /status  will give back status of server
+*    /status will give back status of server
 *    an optional param of 'name' specifies a requestor name to appear in response
+*    /detailed along with the 'details' param specifies details to appear in response
 
 **--> What you'll need**
 
