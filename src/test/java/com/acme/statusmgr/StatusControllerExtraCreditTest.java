@@ -1,6 +1,6 @@
 package com.acme.statusmgr;
 
-import com.acme.statusmgr.beans.facade.Mock;
+import com.acme.statusmgr.beans.systemInfo.Mock;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Assertions;

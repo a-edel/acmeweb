@@ -1,7 +1,11 @@
-package com.acme.statusmgr;
+package com.acme.statusmgr.beans.systemInfo;
 
 import com.acme.servermgr.ServerManager;
 
+/**
+ * An implementation of the FacadeInterface,
+ * providing a facade to access real data for system information.
+ */
 public class Facade implements FacadeInterface{
     @Override
     public String getServerStatus() {

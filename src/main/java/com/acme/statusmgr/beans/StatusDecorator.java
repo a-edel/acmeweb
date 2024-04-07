@@ -1,6 +1,6 @@
 package com.acme.statusmgr.beans;
 
-import com.acme.statusmgr.beans.facade.FacadeInterface;
+import com.acme.statusmgr.beans.systemInfo.FacadeInterface;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 

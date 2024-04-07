@@ -1,8 +1,8 @@
 package com.acme.statusmgr;
 
 import com.acme.statusmgr.beans.*;
-import com.acme.statusmgr.beans.facade.Facade;
-import com.acme.statusmgr.beans.facade.FacadeInterface;
+import com.acme.statusmgr.beans.systemInfo.Facade;
+import com.acme.statusmgr.beans.systemInfo.FacadeInterface;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpStatus;

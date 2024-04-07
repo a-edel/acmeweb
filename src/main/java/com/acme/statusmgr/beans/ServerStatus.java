@@ -1,6 +1,6 @@
 package com.acme.statusmgr.beans;
 
-import com.acme.statusmgr.beans.facade.FacadeInterface;
+import com.acme.statusmgr.beans.systemInfo.FacadeInterface;
 
 /**
  * Represents the status of a server.

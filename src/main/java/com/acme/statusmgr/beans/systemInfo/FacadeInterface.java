@@ -1,7 +1,7 @@
-package com.acme.statusmgr.beans.facade;
+package com.acme.statusmgr.beans.systemInfo;
 
 /**
- * The FacadeInterface provides a facade for methods that obtain various server status information.
+ * The FacadeInterface provides a facade for methods that obtain system information from various sources
  */
 public interface FacadeInterface {
     /**
