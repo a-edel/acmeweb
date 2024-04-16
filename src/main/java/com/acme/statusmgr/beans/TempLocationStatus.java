@@ -10,10 +10,12 @@ public class TempLocationStatus extends StatusDecorator {
         super(status, facade);
     }
 
+    @Override
     public String getStatusDesc() {
         return getBaseStatusDesc() + ", and the server's temp file location is " + getFacade().getTempLocation();
     }
 
+    @Override
     public Integer getRequestCost() {
         return getBaseRequestCost() + requestCost;
     }

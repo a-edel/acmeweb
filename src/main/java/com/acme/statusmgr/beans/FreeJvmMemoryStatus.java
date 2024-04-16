@@ -9,10 +9,12 @@ public class FreeJvmMemoryStatus extends StatusDecorator {
         super(status, facade);
     }
 
+    @Override
     public String getStatusDesc() {
         return getBaseStatusDesc() + ", and there are " + getFacade().getFreeJVMMemory() + " bytes of JVM memory free";
     }
 
+    @Override
     public Integer getRequestCost() {
         return getBaseRequestCost() + requestCost;
     }

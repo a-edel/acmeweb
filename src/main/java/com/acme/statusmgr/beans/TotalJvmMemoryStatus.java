@@ -10,10 +10,12 @@ public class TotalJvmMemoryStatus extends StatusDecorator {
         super(status, facade);
     }
 
+    @Override
     public String getStatusDesc() {
         return getBaseStatusDesc() + ", and there is a total of " + getFacade().getTotalJVMMemory() + " bytes of JVM memory";
     }
 
+    @Override
     public Integer getRequestCost() {
         return getBaseRequestCost() + requestCost;
     }
